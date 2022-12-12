@@ -15,7 +15,7 @@ html {
 }
 body {
   @apply text-sm;
-  font-family: 'Acumin Variable Concept';
+  font-family: 'Acumin Variable Concept', sans-serif;
 }
 
 header {
@@ -36,7 +36,7 @@ h2 {
   &::after {
     content: attr(title);
     color: #ad6c6c;
-    @apply ml-4 lg_ml-8 mt-0 lg_-mt-2 absolute text-4xl lg_text-8xl opacity-10 leading-tight pointer-events-none;
+    @apply ml-8 mt-1 lg_mt-4 absolute text-4xl lg_text-8xl opacity-10 leading-tight pointer-events-none;
     width: 6em;
   }
 }
