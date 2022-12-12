@@ -1,0 +1,81 @@
+@import 'tailwind.css';
+
+@font-face {
+  font-family: 'Acumin Variable Concept';
+  src: url(@/assets/Acumin.woff2) format('woff2');
+}
+
+html,
+body {
+  background: #f1d8cc;
+}
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+body {
+  @apply text-sm;
+  font-family: 'Acumin Variable Concept';
+}
+
+header {
+  & a {
+    color: #5e5e5e;
+    &:hover {
+      @apply underline;
+    }
+  }
+}
+
+h1 {
+  @apply relative mt-8 lg_mt-11 text-6xl lg_text-9xl font-bold hd-color leading-none;
+}
+h2 {
+  @apply leading-none mb-6 relative font-bold text-base lg_text-2xl;
+  color: #1c0b00;
+  &::after {
+    content: attr(title);
+    color: #ad6c6c;
+    @apply ml-4 lg_ml-8 mt-0 lg_-mt-2 absolute text-4xl lg_text-8xl opacity-10 leading-tight pointer-events-none;
+    width: 6em;
+  }
+}
+h3 {
+  @apply text-xl lg_text-2xl font-bold my-4;
+}
+h4 {
+  @apply text-lg font-bold mt-8 mb-2;
+  color: #444;
+}
+h6 {
+  @apply text-inherit font-bold;
+}
+section {
+  color: #4c4c4c;
+}
+ol {
+  & li {
+    & h6 {
+      @apply mt-2;
+    }
+  }
+}
+
+.hdi {
+  @apply inline-flex items-center align-middle text-transparent -indent-36 overflow-hidden;
+  line-height: 0;
+  width: 1.2em;
+  height: 1.2em;
+  margin-bottom: 0.2em;
+  background: no-repeat center;
+  background-size: contain;
+  &.hdi-horn {
+    background-image: url(@/assets/horn.svg);
+  }
+  &.hdi-discord {
+    background-image: url(@/assets/discord.svg);
+  }
+  &.hdi-twitter {
+    background-image: url(@/assets/twitter.svg);
+  }
+}

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hd-color {
+    color: #d8423f;
+  }
+  .hd-container {
+    @apply w-full lg_max-w-5xl min-h-full mx-auto px-4;
+  }
+  .hd-content {
+    @apply w-full lg_max-w-3xl min-h-full mx-auto px-4;
+  }
+  /*  */
+  .hd-logo {
+    @apply inline-block text-sm lg_text-base font-bold;
+    &::before {
+      content: 'History';
+      color: #3d3d3d;
+    }
+    &::after {
+      content: 'DAO';
+      @apply hd-color;
+    }
+  }
+  .hd-button {
+    @apply inline-flex px-3 py-2 rounded-md text-xs;
+    background: #d8423f;
+    color: #fff;
+  }
+}
