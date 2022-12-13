@@ -21,7 +21,7 @@
     }
     &::after {
       content: 'DAO';
-      @apply hd-color;
+      color: #C7000F;
     }
   }
   .hd-button {
